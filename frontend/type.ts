@@ -9,7 +9,7 @@ export interface InputTypes {
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;
     required?: boolean | false;
     showIcon?: boolean | false;
-    value?: any;
+    value?: string | number;
 }
 
 export interface LabelTypes {

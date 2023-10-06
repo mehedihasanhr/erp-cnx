@@ -27,12 +27,12 @@ export default function Login() {
     };
 
     return (
-        <div>
+        <div className="bg-gradient-to-br from-[#4db893] via-green-300 to-[#b3e0d1] relative">
             <div className="flex justify-center items-center h-screen">
-                <div>
+                <div className="bg-white px-8 py-5 shadow-lg rounded-md">
                     <form className="my-2" onSubmit={handleLogin}>
                         <div className="flex justify-center mb-5">
-                            <div className="p-3 bg-green-500 rounded-full">
+                            <div className="p-3 bg-[#009965] rounded-full">
                                 <Icon icon="lock" className="h-6 w-6 fill-white" />
                             </div>
                         </div>
@@ -66,13 +66,13 @@ export default function Login() {
                         <div>
                             <input
                                 type="submit"
-                                className="border w-full mt-5 py-2 rounded font-semibold text-white bg-green-500 cursor-pointer"
+                                className="border w-full mt-5 py-2 rounded font-semibold text-white bg-[#009965] cursor-pointer"
                                 value="Login"
                             />
                         </div>
                     </form>
                     {/* error component  */}
-                    <Error message="hello js" />
+                    <Error message="All field required" />
                 </div>
             </div>
         </div>
