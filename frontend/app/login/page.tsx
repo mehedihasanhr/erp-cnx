@@ -66,7 +66,7 @@ export default function Login() {
                         <div>
                             <input
                                 type="submit"
-                                className="border w-full mt-5 py-2 rounded font-semibold text-white bg-green-500"
+                                className="border w-full mt-5 py-2 rounded font-semibold text-white bg-green-500 cursor-pointer"
                                 value="Login"
                             />
                         </div>
