@@ -2,5 +2,8 @@
   "name": "erp-system",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17"
+  }
 }

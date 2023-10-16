@@ -1,6 +1,6 @@
 // global types declare here...
 
-import { ChangeEvent } from 'react';
+import { ChangeEvent, FormEvent } from 'react';
 
 export interface InputTypes {
     className: string;
@@ -10,6 +10,7 @@ export interface InputTypes {
     required?: boolean | false;
     showIcon?: boolean | false;
     value?: string | number;
+    placeholder?: string;
 }
 
 export interface LabelTypes {
@@ -22,4 +23,15 @@ export interface LabelTypes {
 export interface IconTypes {
     className?: string;
     icon: string;
+}
+
+export interface SearchTypes {
+    className?: string;
+    searchText: string;
+    setSearchText: (searchText: string) => void;
+    handleSubmit: (e: FormEvent<HTMLFormElement>, searchText: string) => void;
+}
+export interface SearchWithOnChangeTypes {
+    className?: string;
+    handleSearchOnChange: (searchText: string) => void;
 }

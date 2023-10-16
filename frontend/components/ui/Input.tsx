@@ -3,7 +3,7 @@ import { Icon } from '@/assets/Icon/Icon';
 import { InputTypes } from '@/type';
 import { useState } from 'react';
 
-export const Input = ({ className, type, id, onChange, required, showIcon, value }: InputTypes) => {
+export const Input = ({ className, type, id, onChange, required, showIcon, value, placeholder }: InputTypes) => {
     const [isShown, setIsShown] = useState<boolean>(false);
 
     return (
@@ -16,6 +16,7 @@ export const Input = ({ className, type, id, onChange, required, showIcon, value
                 id={id}
                 required={required}
                 value={value}
+                placeholder={placeholder}
             />
             {showIcon && (
                 <div className="absolute top-2.5 right-3 cursor-pointer" onClick={() => setIsShown(!isShown)}>
